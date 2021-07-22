@@ -47,6 +47,7 @@ Because it is based on [GitHub Search](https://docs.github.com/en/rest/reference
     * 1.0.4 Fix some problems
         * Remove anchor outline
         * Wrong anchor path
+    * 1.0.6 Base64 encode the token to avoid the detection of GitHub
 
 ### :fuelpump: How to contribute
 
