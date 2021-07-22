@@ -69,6 +69,7 @@
 .search-section .search-results-list .search-results-item-title a,
 .search-section .search-results-list .search-results-item-title a:focus {
     color: var(--color-text-link, #0969da);
+    outline: none;
 }
 
 .search-section .search-results-list pre .highlight {
