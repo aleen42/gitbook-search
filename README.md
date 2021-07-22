@@ -43,6 +43,7 @@ Because it is based on [GitHub Search](https://docs.github.com/en/rest/reference
 ### Release History
 
 * ==================== **1.0.0 Initial release** ====================
+    * 1.0.1 Temporarily hide when using mobile devices
 
 ### :fuelpump: How to contribute
 
