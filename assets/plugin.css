@@ -74,6 +74,7 @@
 
 .search-section .search-results-list pre .highlight {
     color: var(--color-prettylights-syntax-entity, #8250df);
+    font-weight: bold;
 }
 
 .search-section .search-results-list {
@@ -84,12 +85,14 @@
 .search-section .search-results-list pre,
 .search-section .search-results-list code {
     color: var(--color-text-primary, #c9d1d9);
+    font-family: inherit;
 }
 
 .search-section .search-results-list pre {
     background-color: var(--color-bg-tertiary, #f6f8fa);
     padding: .85em 1em;
     margin-bottom: 1.275em;
+    line-height: 1.7;
 }
 
 /* loading */
