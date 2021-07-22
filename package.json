@@ -1,6 +1,6 @@
 {
     "name": "gitbook-plugin-github-search",
-    "version": "1.0.1",
+    "version": "1.0.4",
     "description": "A Gitbook plugin to implement searching with GitHub Search API",
     "main": "index.js",
     "scripts": {},

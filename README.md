@@ -44,6 +44,9 @@ Because it is based on [GitHub Search](https://docs.github.com/en/rest/reference
 
 * ==================== **1.0.0 Initial release** ====================
     * 1.0.1 Temporarily hide when using mobile devices
+    * 1.0.4 Fix some problems
+        * Remove anchor outline
+        * Wrong anchor path
 
 ### :fuelpump: How to contribute
 
