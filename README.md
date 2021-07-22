@@ -38,6 +38,7 @@ Because it is based on [GitHub Search](https://docs.github.com/en/rest/reference
 
 - [ ] Implement pagination
 - [ ] User experience enhancement
+- [ ] Responsive design for mobile devices
 
 ### Release History
 

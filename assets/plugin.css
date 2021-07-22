@@ -1,7 +1,13 @@
-/* serach area */
+/* search area */
 .toolbar-search {
     line-height: 50px;
     position: relative;
+}
+
+@media (max-width: 600px) {
+    .toolbar-search {
+        display: none;
+    }
 }
 
 .toolbar-search input {
