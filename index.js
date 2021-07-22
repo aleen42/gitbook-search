@@ -20,10 +20,22 @@
  *
  **********************************************************************/
 
+const fs = require('fs');
+const path = require('path');
+
 module.exports = {
-    website: {
+    book: {
         assets: './assets',
         css: ['plugin.css'],
         js: ['plugin.js'],
+    },
+    hooks: {
+        'init': function () {
+            const asset = path.resolve(__dirname, './assets/plugin.js');
+            fs.writeFileSync(
+                asset,
+                fs.readFileSync(asset, 'utf8').replace(/__ENV_ACCESS_TOKEN__/, `atob('${Buffer.from(process.env['ACCESS_TOKEN'] || '').toString('base64')}')`)
+                , 'utf8');
+        },
     },
 };

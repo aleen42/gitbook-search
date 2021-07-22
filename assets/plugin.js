@@ -23,7 +23,12 @@
 /* global $ */
 require(['gitbook'], function (gitbook) {
     gitbook.events.bind('page.change', () => {
-        const {repo, token} = gitbook.state.config.pluginsConfig['github-search'] || {};
+        const pluginConfig = gitbook.state.config.pluginsConfig['github-search'] || {};
+        const repo = pluginConfig.repo;
+        if (!repo) return;
+
+        const token = pluginConfig.token || __ENV_ACCESS_TOKEN__;
+
         $.ajaxSetup({
             headers: Object.assign({
                 Accept: 'application/vnd.github.v3.text-match+json',
