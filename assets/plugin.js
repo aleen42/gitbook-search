@@ -22,8 +22,8 @@
 
 /* global $ */
 require(['gitbook'], function (gitbook) {
-    gitbook.events.bind('start', function (e, config) {
-        const {repo, token} = config['github-search'] || {};
+    gitbook.events.bind('page.change', () => {
+        const {repo, token} = gitbook.state.config.pluginsConfig['github-search'] || {};
         $.ajaxSetup({
             headers: Object.assign({
                 Accept: 'application/vnd.github.v3.text-match+json',
