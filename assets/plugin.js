@@ -80,7 +80,7 @@ require(['gitbook'], function (gitbook) {
                         result.items.map(item =>
                             '<li class="search-results-item">'
                             + '<h3 class="search-results-item-title">'
-                            + `<a href="${item.path === 'README.md' ? '/' : item.path.replace(/\.md$/, '.html')}">${encode(refTitle(item.path))}</a>`
+                            + `<a href="/${item.path === 'README.md' ? '' : item.path.replace(/\.md$/, '.html')}">${encode(refTitle(item.path))}</a>`
                             + '</h3>'
                             + item['text_matches'].map(m => `<pre><code>${emphasize(m.fragment, m.matches).trim()}</code></pre>`).join('')
                             + '</li>').join('')
