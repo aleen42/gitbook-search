@@ -15,9 +15,7 @@
         "node": "10.x",
         "gitbook": ">=3.2.2"
     },
-    "dependencies": {
-        "gitbook": "aleen42/gitbook#3.2.2-no-search"
-    },
+    "dependencies": {},
     "author": "Aleen <aleen42@vip.qq.com>",
     "license": "MIT",
     "bugs": {
