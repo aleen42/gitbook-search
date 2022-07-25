@@ -50,6 +50,7 @@ Because it is based on [GitHub Search](https://docs.github.com/en/rest/reference
     * 1.0.6 Base64 encode the token to avoid the detection of GitHub
     * 1.0.7 style enhancement
     * 1.0.8 adapt to header's height
+    * 1.0.9 remove unused dependencies
 
 ### :fuelpump: How to contribute
 
